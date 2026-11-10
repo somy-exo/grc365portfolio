@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+        <link href="https://api.fontshare.com/v2/css?f[]=archivo@400&f[]=clash-display@600&display=swap" rel="stylesheet">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            } @font-face {
+                font-family: 'Archivo', sans-serif;
+                src: url("Archivo-Regular.otf");
+            } h1{
+                font:48pt/1.4em ClashDisplay;
+                text-align: center;
+                text-shadow: 1px 2px 3px rgba(27, 59, 111, 1.00);
+                margin: 24px 0;
+            } #textbox{
+                display: flex;
+                justify-content: space-around;
+                width: 1024px;
+                height: 928px;
+                margin: 0 auto;
+                background: whitesmoke;
+                box-shadow: 2px 3px 6px gainsboro;
+                border: 1px solid gainsboro;
+            } figure {
+                margin: 24px;
+            } img, .zoom {
+                width: 200px;
+                height: 200px;
+                border: 1px solid gray;
+                box-shadow: 2px 3px 6px gray;
+                transition: transform 0.5s;
+            } figcaption{
+                font:12pt/1.4em Archivo;
+                margin-top: 3px;
+            } .zoom {
+                background: url("If\ Cats\ Disappered\ from\ the\ World.jpg");
+                background-size: 100%;
+                background-position: center;
+            } img:hover {
+                transform: scale(1.03);
+                transition: background-size 0.5s;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Portfolio</h1>
+        <div id="textbox">
+            <figure>
+                <a href="If Cats Disappered from the World.jpg" target="_blank">
+                <img src="If Cats Disappered from the World.jpg"/>
+                </a>
+                <figcaption>
+                    Movie Poster Redesign
+                </figcaption>
+            </figure>
+            <figure>
+                <a href="homesickcafemenu.jpg" target="_blank">
+                <img src="homesickcafemenu.jpg" />
+                </a>
+                <figcaption>
+                    Cafe Menu Design
+                </figcaption>
+            </figure>
+            <figure>
+                <a href="Over Consumption Spread2.jpg" target="_blank">
+                <img src="Over Consumption Spread2.jpg" />
+                </a>
+                <figcaption>
+                    Magazine Spread Design
+                </figcaption>
+            </figure>
+        </div>
+    </body>
+</html>
